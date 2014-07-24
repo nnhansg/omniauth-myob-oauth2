@@ -4,7 +4,7 @@ require File.expand_path(File.join('..', 'lib', 'omniauth', 'myob_oauth2', 'vers
 Gem::Specification.new do |spec|
   spec.add_dependency 'omniauth', '> 1.0'
   
-  spec.name          = "omniauth_myob_oauth2"
+  spec.name          = "omniauth-myob-oauth2"
   spec.version       = OmniAuth::MyobOauth2::VERSION
   spec.authors       = ["Haiyang (harry) Gao"]
   spec.email         = ["foxgaocn@gmail.com"]
