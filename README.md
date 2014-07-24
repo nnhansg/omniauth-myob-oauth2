@@ -25,21 +25,20 @@ end
 
 You can configure several options, which you pass in to the provider method via a hash:
 
-By default it will use the production environment. If you want to use other env like sit, you can overwrite the site by:
-```
+```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :myob_oauth2, your_client_id, your_client_secret,
-    { 
-        client_options: { site: 'https://test.secure.myob.com' }, #set the target site to SIT
-        scope: 'mydot.assets' #set the scope you want
-    }
+  { 
+      client_options: { site: 'https://test.secure.myob.com' }, #set the target site to SIT
+      scope: 'mydot.assets' #set the scope you want
+  }
 end
 ```
 
 
 ## Auth Hash
 Here's an example of an authentication hash available in the callback by accessing request.env["omniauth.auth"]:
-```
+```ruby
 {
   "provider"=>"myob_oauth2", 
   "uid"=>"ab359535-7be6-49a2-b9fd-xxxxxxx", 
