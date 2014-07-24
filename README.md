@@ -6,7 +6,7 @@ Strategy to authenticate with MYOB via OAuth2 in OmniAuth.
 
 Add this line to your application's Gemfile:
 
-    gem 'omniauth_myob_oauth2'
+    gem 'omniauth-myob-oauth2'
 
 And then execute:
 
